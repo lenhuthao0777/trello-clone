@@ -1,0 +1,59 @@
+@import 'assets/styles/common/_common.scss';
+
+.add-col {
+  min-width: 300px;
+
+  button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+    border-radius: $bd-radius;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    padding: $gap;
+    transition: all 0.3s;
+    cursor: pointer;
+    p {
+      padding-left: 20px;
+      font-weight: 400;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .content {
+    background-color: #fff;
+    margin-top: 5px;
+    padding: $gap;
+    border-radius: $bd-radius;
+    .action {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-top: 10px;
+      .ok {
+        font-size: 16px;
+        color: #2ecc71;
+        margin-right: 15px;
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          color: green;
+        }
+      }
+      .cancle {
+        font-size: 16px;
+        color: #e74c3c;
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}

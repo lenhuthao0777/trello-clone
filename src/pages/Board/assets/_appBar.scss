@@ -1,0 +1,11 @@
+@import 'assets/styles/common/_common.scss';
+
+.navbar-app {
+  height: #{$appbar-h};
+  display: flex;
+  align-items: center;
+  padding-left: $gap;
+  font-size: 1.5rem;
+  // background-color: $app-bg-color;
+  color: #fff;
+}

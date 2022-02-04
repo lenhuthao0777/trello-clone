@@ -1,0 +1,12 @@
+@import 'assets/styles/common/_common.scss';
+.main {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 40px 50px 1fr;
+  line-height: 1.3em;
+  // background-image: url('../../images/backgrou.png');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-clip: content-box;
+  background-color: $app-bg-color;
+}

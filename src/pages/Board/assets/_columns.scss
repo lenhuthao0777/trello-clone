@@ -1,0 +1,29 @@
+@import 'assets/styles/common/_common.scss';
+
+.columns {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0 10px;
+  height: #{$columns-h};
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  &::-webkit-scrollbar:horizontal {
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: darken($item-color, 15);
+  }
+  .col-drop-preview {
+    background-color: rgba(150, 150, 200, 0.1);
+    border: 1px dashed #abc;
+    margin: 5px 45px 5px 5px;
+  }
+  .smooth-dnd-container.horizontal {
+    .smooth-dnd-draggable-wrapper {
+      padding-right: 10px;
+    }
+  }
+ 
+}

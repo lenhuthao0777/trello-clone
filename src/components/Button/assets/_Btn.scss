@@ -1,0 +1,64 @@
+@import 'assets/styles/common/_common.scss';
+.btn {
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  outline: none;
+  font-size: 14px;
+}
+
+
+.primary {
+  background-color: $color-green;
+  color: $color-white-0;
+  border: 1px solid $color-trans;
+  &:hover {
+    background-color: $color-green-dark;
+    color: $color-white-0;
+  }
+}
+.outline {
+  background-color: $color-trans;
+  color: $color-green;
+  border: 1px solid $color-green;
+  &:hover {
+    color: $color-black-0;
+    border-color: $color-black-0;
+  }
+}
+.light {
+  background-color: $color-trans;
+  color: $color-white-0;
+  border: 1px solid $color-white-0;
+  &:hover {
+    color: $color-white-0;
+  }
+}
+.not {
+  font-weight: 550;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  outline: none;
+  background-color: $color-trans;
+  border: none;
+  color: $color-black-2;
+}
+.lg {
+  padding: 15px 30px;
+  font-size: 18px;
+}
+.md {
+  padding: 8px 25px;
+  font-size: 14px;
+}
+.sm {
+  // padding: 8px 10px;
+  font-size: 14px;
+}
+.full {
+  padding: 8px 10px;
+  font-size: 14px;
+  width: 100%;
+}

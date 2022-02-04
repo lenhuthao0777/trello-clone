@@ -1,0 +1,87 @@
+@import 'assets/styles/common/_common.scss';
+.col-item {
+  flex: 0 0 auto;
+  width: 300px;
+  color: #172b4d;
+  height: calc(#{$columns-h} - #{$gap * 2});
+  &:not(:first-child) {
+    margin-left: $gap;
+  }
+  > * {
+    background-color: $item-color;
+    color: $text-color;
+    padding: 0 0 8px;
+  }
+  .head {
+    padding: 25px 15px;
+    height: $cl-head-height;
+    line-height: $ln-height;
+    border-top-left-radius: $bd-radius;
+    border-top-right-radius: $bd-radius;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      cursor: move;
+      flex: 1;
+      flex-shrink: 0;
+    }
+    .edit-colName {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      input {
+        height: 30px;
+        border: none;
+        outline: none;
+        flex: 1;
+        padding:0 10px;
+        font-size: 13px;
+      }
+      &__icon {
+        padding: 0 10px;
+      }
+    }
+  }
+  .cards-list {
+    margin: 0;
+    padding: $gap 0 $gap $gap;
+    max-height: calc(100% - $cl-head-height - $cl-footer-height);
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:vertical {
+      width: 11px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: darken(rgba(0, 0, 0, 0.2), 15);
+    }
+    .card-ghost {
+      transition: transform 0.18s ease;
+      transform: rotateZ(5deg);
+    }
+    .card-ghost-drop {
+      transition: transform 0.18s ease-in-out;
+      transform: rotateZ(0deg);
+    }
+    .card-drop-preview {
+      background-color: rgba(150, 150, 200, 0.1);
+      border: 1px dashed #abc;
+      margin: 5px;
+    }
+  }
+  .footer {
+    height: $cl-footer-height;
+    line-height: $cl-footer-height;
+    border-bottom-left-radius: $bd-radius;
+    border-bottom-right-radius: $bd-radius;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 15px;
+    font-size: 16px;
+  }
+}

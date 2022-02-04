@@ -1,0 +1,30 @@
+@import 'assets/styles/common/_common.scss';
+
+.card-item {
+  cursor: move;
+  padding: $gap;
+  margin-bottom: $gap;
+  background-color: #fff;
+  border-radius: $bd-radius;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+  &:not(:last-child) {
+    margin-bottom: $gap;
+  }
+  .card-img {
+    // width: calc(100% + 2 * #{$gap});
+    width: 100%;
+    border-radius: $bd-radius;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 20px;
+    user-select: none;
+  }
+  .card-title {
+    font-size: 14px;
+    text-align: left;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,58 @@
+.modal-component {
+  .body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 600px;
+    z-index: 11;
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 30px;
+      width: 100%;
+      border-bottom: 1px solid #d3d3d3;
+      padding-bottom: 20px;
+    }
+    .content {
+    }
+    .footer {
+      border-top: 1px solid #d3d3d3;
+      padding-top: 20px;
+      &.btns {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 30px 0;
+        .btn {
+          padding: 8px 10px;
+          font-size: 14px;
+          display: inline-block;
+          width: 150px;
+          &-submit {
+            background-color: seagreen;
+            color: #fff;
+            margin-right: 15px;
+          }
+          &-cancel {
+            background-color: #d3d3d3;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+  .overlay {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100%;
+    z-index: 10;
+  }
+}

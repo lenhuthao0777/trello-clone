@@ -1,0 +1,31 @@
+@import 'assets/styles/common/_common.scss';
+.add-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .btn-add-card {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    .plus-icon {
+      margin-right: 20px;
+    }
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    input {
+      height: 30px;
+      border: none;
+      flex: 1;
+      outline : none;
+    }
+    span{
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  }
+}

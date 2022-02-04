@@ -1,0 +1,11 @@
+@import 'assets/styles/common/_common.scss';
+
+.navbar-board {
+  // background-color: $board-bg-color;
+  font-size: 1.5rem;
+  padding-left: $gap;
+  display: flex;
+  align-items: center;
+  height: #{$board-h};
+  color: #fff;
+}
